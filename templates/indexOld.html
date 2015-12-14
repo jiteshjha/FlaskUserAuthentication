@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://handsontable.com//bower_components/handsontable/dist/handsontable.full.min.css" rel="stylesheet">
+
+    <title>Euprime</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../static/css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+<div class="dropdown moveButton">
+  <p></p>
+  <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" data-target="#">Dropdown trigger</button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+      <li><a tabindex="-1" href="#">Reports</a></li>
+      <li><a tabindex="-1" href="#">Descriptive Statistics</a></li>
+      <li><a tabindex="-1" href="#">Tables</a></a></li>
+      <li><a tabindex="-1" href="#">Compare Means</a></li>
+      <li><a tabindex="-1" href="#">General Linear Model</a></li>
+      <li><a tabindex="-1" href="#">Generalized Linear Model</a></li>
+      <li><a tabindex="-1" href="#">Mixed Models</a></li>
+      <li><a tabindex="-1" href="#">Correlate</a></li>
+      <li><a tabindex="-1" href="#">Regression></a></li>
+      <li><a tabindex="-1" href="#">Loglinear</a></li>
+      <li><a tabindex="-1" href="#">Classify</a></li>
+      <li><a tabindex="-1" href="#">DataReduction</a></li>
+      <li><a tabindex="-1" href="#">Scale</a></li>
+      <li><a tabindex="-1" href="#">NonParametric Tests</a></li>
+      <li><a tabindex="-1" href="#">TimeSeries</a></li>
+      <li><a tabindex="-1" href="#">Survival</a></li>
+      <li><a tabindex="-1" href="#">MultipleResponse</a></li>
+      <li><a tabindex="-1" href="#">Missed Value Analysis</a></li>
+      <li><a tabindex="-1" href="#">Complex Samples</a></li>
+      <li><a tabindex="-1" href="#">QualityControl</a></li>
+      <li><a tabindex="-1" href="#">ROC Curve</a></li>
+      <li class="dropdown-submenu">
+        <a tabindex="-1" href="#">Ordinal Outcomes</a>
+        <ul class="dropdown-menu">
+            <li><a tabindex="-1" href="#">Ordered Logistics Regressions</a></li>
+            <li><a tabindex="-1" href="#">Ordered Probit Regressions</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a tabindex="-1" href="#">Rank-Ordered Logistics Regressions</a></li>
+            <li><a tabindex="-1" href="#">Rank-Ordered Probit Regressions</a></li>
+        </ul>
+      </li>
+  </ul>
+</div>
+
+    <div class="container">
+
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      <div class="masthead">
+        <h3 class="text-muted">EUPRIME</h3>
+        <nav>
+          <ul class="nav nav-justified">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="Projects">Projects</a></li>
+            <li><a href="Services">Services</a></li>
+            <li><a href="Downloads">Downloads</a></li>
+            <li><a href="About">About</a></li>
+            <li><a href="Contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="handsontable">
+        <div id="divButtons" class="submitExcelButton">
+            <input type="Button" name="submit" value="Compute / Download" class="btnSubmit btn btn-default" />
+            </br>
+            </br>Console output:</br>
+        <span id="exampleconsole"></span>
+        </div>
+      </div>
+
+      <div id="answertable">
+        <div id="divButtons" class="submitExcelButton">
+            <input type="Button" name="submit" value="Compute / Download" class="btnSubmit btn btn-default" />
+            </br>
+            </br>Console output:</br>
+        <span id="exampleconsole"></span>
+        </div>
+      </div>
+
+
+      <!-- Site footer -->
+      <footer class="footer">
+        <p>&copy; Euprime 2015</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+  </body>
+
+<script src="../static/js/lib/jquery-2.1.4.min.js"></script>
+<script src="../static/bootstrap/js/bootstrap.min.js"></script>
+<script src="http://handsontable.com//bower_components/handsontable/dist/handsontable.full.min.js"></script>
+<script src="../static/js/home.js"></script>
+</html>

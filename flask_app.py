@@ -97,5 +97,42 @@ def validateLogin():
     finally:
         cursor.close()
         con.close()
+'''New templates'''
+@app.route('/Projects')
+def showProjects():
+    if session.get('user'):
+        return render_template('projects.html')
+    else:
+        return render_template('error.html',error = 'Unauthorized Access')
+
+@app.route('/Services')
+def showServices():
+    if session.get('user'):
+        return render_template('services.html')
+    else:
+        return render_template('error.html',error = 'Unauthorized Access')
+
+@app.route('/Downloads')
+def showDownloads():
+    if session.get('user'):
+        return render_template('downloads.html')
+    else:
+        return render_template('error.html',error = 'Unauthorized Access')
+
+@app.route('/About')
+def showAbout():
+    if session.get('user'):
+        return render_template('about.html')
+    else:
+        return render_template('error.html',error = 'Unauthorized Access')
+
+@app.route('/Contact')
+def showContact():
+    if session.get('user'):
+        return render_template('contact.html')
+    else:
+        return render_template('error.html',error = 'Unauthorized Access')
+
+''' End New templates'''
 if __name__ == "__main__":
     app.run()
