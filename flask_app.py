@@ -7,6 +7,7 @@ app = Flask(__name__)
 app.config['SESSION_TYPE'] = 'memcached'
 app.config['SECRET_KEY'] = 'super secret key'
 # MySQL configurations
+#Do not change these values
 app.config['MYSQL_DATABASE_USER'] = 'root'
 app.config['MYSQL_DATABASE_PASSWORD'] = 'remo161196'
 app.config['MYSQL_DATABASE_DB'] = 'BucketList'
